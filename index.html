@@ -1,12 +1,75 @@
+<!-- > @author oussama el allali<-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
 
-    <p>Hello there !!!</p>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/AppCss.css" type="text/css" media="all"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Title</title>
 </head>
+
+
 <body>
+<h1> Calculator App</h1>
+
+
+<div id="calculator">
+
+    <button id="clear" class="clear" onclick="calcFunction(this)">C</button>
+
+    <div id="screen" >0</div>
+
+    <div class="row" id="row0">
+        <div class="col-auto"><button onclick="calcFunction(this)">7</button></div>
+        <div class="col-auto"> <button onclick="calcFunction(this)">8</button></div>
+        <div class="col-auto"> <button onclick="calcFunction(this)">9</button></div>
+        <div class="col-auto"><button onclick="calcFunction(this)">+</button></div>
+    </div>
+
+    <div class="row" id="row1">
+        <div class="col-auto"><button onclick="calcFunction(this)">4</button></div>
+        <div class="col-auto"> <button onclick="calcFunction(this)">5</button></div>
+        <div class="col-auto"> <button onclick="calcFunction(this)">6</button></div>
+        <div class="col-auto"> <button onclick="calcFunction(this)">-</button></div>
+    </div>
+
+    <div class="row" id="row2">
+        <div class="col-auto"> <button onclick="calcFunction(this)">1</button></div>
+        <div class="col-auto"> <button onclick="calcFunction(this)">2</button></div>
+        <div class="col-auto"> <button onclick="calcFunction(this)">3</button></div>
+        <div class="col-auto"><button onclick="calcFunction(this)">*</button></div>
+    </div>
+
+    <div class="row" id="row3">
+        <div class="col-auto"> <button onclick="calcFunction(this)">0</button></div>
+        <div class="col-auto"> <button onclick="calcFunction(this)">.</button></div>
+        <div class="col-auto"><button onclick="calcFunction(this)">=</button></div>
+        <div class="col-auto"><button onclick="calcFunction(this)">/</button></div>
+
+    </div>
+
+</div>
+
+
+<div class="container" id="cont1">
+
+
+    <p id="p1"></p>
+
+</div>
+
+<div class="container" id="footer">Created by Oussama El aallali</div>
 
 </body>
+<script src="js/AppJs.js">
+
+</script>
+
 </html>

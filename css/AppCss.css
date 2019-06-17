@@ -1,0 +1,99 @@
+/**
+@author Oussama el aallali
+ */
+body{
+
+    background-image: url(../data/bkg.png);
+}
+
+#calculator{
+    position: absolute;
+    left: 50%;
+    margin-left: -225px;
+    top: 200px;
+
+}
+
+#row0,#row1,#row2,#row3{
+
+    padding: 24px;
+
+
+
+}
+
+@font-face{
+
+    font-family: "digital";
+    src: url(../data/digital.ttf);
+}
+
+#screen, button{
+
+    font-family: digital;
+}
+
+.col-auto{
+
+    font-size: 62px;
+
+}
+
+#screen{
+    font-size: 55pt;
+    text-align: right;
+    margin-right: 20px;
+    background-color: rgba(0,0,0,0.33);
+    margin-left: 20px;
+    color: #eeecec;
+}
+
+.clear{
+    position: absolute;
+    margin-left: 21px;
+    font-size: 33px;
+    top: -60px;
+}
+
+button{
+    border: unset;
+    background-color: rgba(0,0,0,0.22);
+    padding-left: 19px;
+    margin: 4px;
+    width: 70px;
+
+}
+
+#p1{
+
+    margin-top: 0;
+    margin-bottom: 1rem;
+    position: fixed;
+    right: 1%;
+    bottom: 0%;
+    background: rgba(0,0,0,0.33);
+    color: black;
+    font-size: 30px;
+    padding: 12px;
+    border-radius: 38px;
+    box-shadow: 4px -6px 102px #e80000;
+    font-family: digital;
+}
+
+h1{
+
+    text-align: center;
+    font-family: digital;
+    color: black;
+    font-size: 48pt;
+}
+
+#footer{
+
+    text-align: center;
+}
+
+button:hover{
+
+    filter: drop-shadow(5px 5px 4px );
+}
